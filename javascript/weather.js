@@ -1,4 +1,4 @@
-const API_KEY = "871242005db9771ca1c90b14fd7046bd";
+const API_KEY = "871242005db9771ca1c90b14fd7046bd"; /*회원가입을 하면 자동으로 키발급해준다*/
 
 function onGeoOk(position){ /*position: 함수의 기본객체 user의 위치를 얻는다*/
     const lat = position.coords.latitude;

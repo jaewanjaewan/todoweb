@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box; /* 보더굵기 + 패딩넓이까지 합침 모든 태그에 다 주기 */
+ }
+
 .hidden{
     display: none;
 }
@@ -9,6 +13,7 @@
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
 }
 
 .bgImage-cover{
@@ -20,9 +25,10 @@
     z-index: 1;
 }
 
-body{
+html, body{
     /*font-family: 'BMJUA';*/
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 ul{
@@ -42,6 +48,9 @@ input[type=text]:focus{
     border: 3px solid whitesmoke;
     border-radius: 5px;
     
+}
+.button{
+    margin-left: 10px;
 }
 
 .button-name{
@@ -70,7 +79,7 @@ input[type=text]:focus{
 #todo-list{
     /*white-space: nowrap;*/
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: 90%;
     transform: translate(-50%,-50%);
     z-index: 2;
@@ -78,6 +87,8 @@ input[type=text]:focus{
     font-size: 25px;
     color: whitesmoke;
     opacity: 60%;
+    overflow: hidden;
+    /* padding: 40px; */
 }
 
 #login-form{

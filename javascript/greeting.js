@@ -6,7 +6,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function onLoginSubmit(event){ /*event(e): 기본적으로 브라우저가 제공해주는 api이며 많은정보를 얻을수있다*/
-    event.preventDefault(); /*브라우저가 기본동작을 실행하지못하게 막는다(새로고침이 안됨), 우리가원하는대로적기위해*/
+    event.preventDefault(); /*브라우저의 기본동작을 실행하지못하게 막는다(새로고침이 안됨), 우리가원하는대로적기위해*/
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username); /*오직 텍스트만 저장할수있다*/

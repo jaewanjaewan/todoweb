@@ -14,6 +14,7 @@ function paintToDo(newToDo){
     const span = document.createElement('span');
     span.innerText = newToDo.text;
     const button = document.createElement('button');
+    button.classList.add('button');
     button.innerText = '❌';
     button.addEventListener('click', (e) => { /*event(e): 기본적으로 브라우저가 제공해주는 api이며 많은정보를 얻을수있다*/
         const li = e.target.parentElement;   /*자신(버튼)의 부모 즉 li를찾는다. 삭제함수는 버튼에만 쓰이기때문에 익명함수생성*/
